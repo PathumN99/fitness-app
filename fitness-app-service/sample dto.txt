@@ -1,0 +1,59 @@
+//Exercise dto
+{
+  "id": "824187016",
+  "exercise_name": "sample item1",
+  "main_body_part": "sample data",
+  "minor_body_part": "sample data",
+  "alternative": "sample data",
+  "video_url": "sample url"  
+}
+
+//Food dto
+{
+  "id": "624131516",
+  "item_name": "sample item1",
+  "calory": "20",
+  "protein": "30",
+  "carb": "40",
+  "fat": "10",
+  "accuracy": "50" 
+}
+
+//Recipe dto
+{
+  "id": "224187506",
+  "food_item": "sample item1",
+  "amount": "20",
+  "cooked": "1"   
+}
+
+//Workout dto
+{
+  "id": "224187506",
+  "set": "10",
+  "rep": "20",
+  "rest": "30",
+  "exercise_id": "852187016"
+}
+
+//user dto
+{
+  "id": "224127505",
+  "user_name": "user123",
+  "password": "password",
+  "email": "sample@gmail.com"
+}
+
+//user password update dto
+{  
+  "user_name": "user123",
+  "password": "password",
+  "new_password": "password1",
+  "confirm_password": "password1"
+}
+
+//forgot password dto
+{  
+  "user_name": "user123",
+  "email": "sample@gmail.com"  
+}

@@ -1,0 +1,6 @@
+# Setup the project
+1. Create the .env file using sample.env file
+2. npm install
+
+# Running the server
+npm run start

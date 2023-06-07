@@ -1,0 +1,51 @@
+CREATE TABLE `fit_exercise` (
+  `id` varchar(50) DEFAULT NULL,
+  `exercise_name` varchar(255) DEFAULT NULL,
+  `main_body_part` varchar(255) DEFAULT NULL,
+  `minor_body_part` varchar(255) DEFAULT NULL,
+  `alternative` varchar(255) DEFAULT NULL,
+  `video_url` varchar(255) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+
+CREATE TABLE `fit_food` (
+  `id` varchar(50) DEFAULT NULL,
+  `item_name` varchar(255) DEFAULT NULL,
+  `calory` int DEFAULT NULL,
+  `protein` int DEFAULT NULL,
+  `carb` int DEFAULT NULL,
+  `fat` int DEFAULT NULL,
+  `accuracy` int DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+
+CREATE TABLE `fit_recipe` (
+  `id` varchar(50) DEFAULT NULL,
+  `food_item` varchar(50) DEFAULT NULL,
+  `amount` int DEFAULT NULL,
+  `cooked` tinyint DEFAULT NULL,
+  KEY `food_item` (`food_item`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+
+CREATE TABLE `fit_workout` (
+  `id` varchar(50) DEFAULT NULL,
+  `num_set` int DEFAULT NULL,
+  `rep` int DEFAULT NULL,
+  `rest` int DEFAULT NULL,
+  `exercise_id` varchar(50) DEFAULT NULL,
+  KEY `exercise_id` (`exercise_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+
+CREATE TABLE `fit_user` (
+  `id` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `user_name` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `password` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+
+//Altering tables
+ALTER TABLE fit_user
+MODIFY COLUMN id INT NOT NULL AUTO_INCREMENT PRIMARY KEY;
