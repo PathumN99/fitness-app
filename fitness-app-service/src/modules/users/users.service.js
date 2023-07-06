@@ -15,7 +15,7 @@ async function sendMail(Mailinfo) {
     let transporter = nodemailer.createTransport({
         host: process.env.MAIL_SERVER_HOST,
         port: process.env.MAIL_SERVER_PORT,
-        secure: false, // true for 465, false for other ports
+        secure: false, // true for port 465, false for other ports
         auth: {
             user: process.env.MAIL,
             pass: process.env.MAIL_PASSWORD,

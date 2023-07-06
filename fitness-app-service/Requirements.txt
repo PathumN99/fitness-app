@@ -4,3 +4,10 @@
 
 # Running the server
 npm run start
+
+# Packages
+npm install express --save
+npm i nodemailer
+npm i dotenv
+npm i bcrypt
+npm install nodemon

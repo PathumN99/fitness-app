@@ -18,7 +18,7 @@ function deleteById(req, res) {
 }
 
 function createRecord(req, res) {
-    commonService.create(req, res, dbTable)
+    commonService.createElement(req, res, dbTable)
 }
 
 function updateRecord(req, res) {
